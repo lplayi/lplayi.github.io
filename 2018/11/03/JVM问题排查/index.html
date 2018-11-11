@@ -90,12 +90,37 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="阿已的博客">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+<meta name="description" content="######问题现象
+
+报警：JMQ消费无规律报警，表示消费有挤压，且为消息量较大的两个topic。
+TP99：消费端业务逻辑TP99比较高，且TP99比较高的都是一台应用服务器。
+服务器性能指标：CPU利用率1%不到，线程数2000不到，YongGC次数也和平时差不多；唯独FullGC不正常，平均一分钟一次。
+
+先不说到目前能否确定是不是FullGC引起的报警，起码这个问题肯定是要解决下的。
+#">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JVM问题排查">
+<meta property="og:url" content="http://yoursite.com/2018/11/03/JVM问题排查/index.html">
 <meta property="og:site_name" content="阿已的博客">
+<meta property="og:description" content="######问题现象
+
+报警：JMQ消费无规律报警，表示消费有挤压，且为消息量较大的两个topic。
+TP99：消费端业务逻辑TP99比较高，且TP99比较高的都是一台应用服务器。
+服务器性能指标：CPU利用率1%不到，线程数2000不到，YongGC次数也和平时差不多；唯独FullGC不正常，平均一分钟一次。
+
+先不说到目前能否确定是不是FullGC引起的报警，起码这个问题肯定是要解决下的。
+#">
+<meta property="og:updated_time" content="2018-11-11T12:13:35.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="阿已的博客">
+<meta name="twitter:title" content="JVM问题排查">
+<meta name="twitter:description" content="######问题现象
+
+报警：JMQ消费无规律报警，表示消费有挤压，且为消息量较大的两个topic。
+TP99：消费端业务逻辑TP99比较高，且TP99比较高的都是一台应用服务器。
+服务器性能指标：CPU利用率1%不到，线程数2000不到，YongGC次数也和平时差不多；唯独FullGC不正常，平均一分钟一次。
+
+先不说到目前能否确定是不是FullGC引起的报警，起码这个问题肯定是要解决下的。
+#">
 
 
 
@@ -123,13 +148,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/archives/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/11/03/JVM问题排查/"/>
 
 
 
 
 
-  <title>归档 | 阿已的博客</title>
+  <title>JVM问题排查 | 阿已的博客</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -154,7 +179,7 @@
     
   
 
-  <div class="container sidebar-position-left  page-archive  ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -238,108 +263,157 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <span class="archive-move-on"></span>
-
-    <span class="archive-page-counter">
-      
-      
-      
-        
-      
-      嗯..! 目前共计 2 篇日志。 继续努力。
-    </span>
-
+  <div id="posts" class="posts-expand">
     
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2018">2018</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/03/JVM问题排查/" itemprop="url">
-              
-                <span itemprop="name">JVM问题排查</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-11-03T20:11:57+08:00"
-              content="2018-11-03" >
-          11-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-      
-      
-      
-
-      
-        
-        <div class="collection-title">
-          <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
-        </div>
-      
-      
-
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2017/01/28/hexo搭建博客笔记/" itemprop="url">
-              
-                <span itemprop="name">hexo搭建博客笔记</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-01-28T10:30:06+08:00"
-              content="2017-01-28" >
-          01-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-    
-
-  </section>
 
   
 
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/03/JVM问题排查/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="阿已">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://upload.jianshu.io/users/upload_avatars/3606282/55a0d847-c8b2-43aa-9bc6-af2f0a681704.png?imageMogr2/auto-orient/strip|imageView2/1/w/300/h/300">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="阿已的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                JVM问题排查
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-03T20:11:57+08:00">
+                2018-11-03
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>######问题现象</p>
+<ul>
+<li>报警：JMQ消费无规律报警，表示消费有挤压，且为消息量较大的两个topic。</li>
+<li>TP99：消费端业务逻辑TP99比较高，且TP99比较高的都是一台应用服务器。</li>
+<li>服务器性能指标：CPU利用率1%不到，线程数2000不到，YongGC次数也和平时差不多；唯独FullGC不正常，平均一分钟一次。</li>
+</ul>
+<p>先不说到目前能否确定是不是FullGC引起的报警，起码这个问题肯定是要解决下的。</p>
+<p>######排查过程<br>先保存GC日志，jmap日志，重启。<br>重启发现，在重启的时候，GC更加频繁，一分钟最高达到17次。为保证不是偶然现象，多重启了几次，每次都是重启的时候有大量FullGC。</p>
+<p>思考下，同样的代码，同样的硬件配置，且在同机房，仅一台机器出现这种现象，那就从配置入手排查。</p>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/01/28/hexo搭建博客笔记/" rel="next" title="hexo搭建博客笔记">
+                <i class="fa fa-chevron-left"></i> hexo搭建博客笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -347,6 +421,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -524,11 +602,9 @@
   
 
   
-  
-    <script type="text/javascript" id="motion.page.archive">
-      $('.archive-year').velocity('transition.slideLeftIn');
-    </script>
-  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
+
 
 
   
